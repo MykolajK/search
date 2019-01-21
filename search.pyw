@@ -47,7 +47,7 @@ search_entry.focus()
 frame_top.grid(row=0, column=0,padx=5, pady=5)
 
 p = ttk.Panedwindow (root, orient=HORIZONTAL)
-# перша панель, яка дозволить закріпити в ньому віджети:
+
 f1 = ttk.Labelframe(p, text='Video')
 
 button1 = Button(f1, buttons)
@@ -70,7 +70,7 @@ button4['text'] = 'Rutube'
 button4['command'] = lambda: search('https://rutube.ru/search/?query=')
 button4.grid(row=1, column=1, padx=5, pady=5)
 
-# друга панель, яка дозволить закріпити в ньому віджети:
+
 f2 = ttk.Labelframe(p, text='Site')
 button1 = Button(f2, buttons)
 button1['text'] = 'Google'
@@ -96,7 +96,7 @@ p.add (f1)
 p.add (f2)
 p.grid(row=2, column=0, padx=4)
 
-# перша панель, яка дозволить закріпити в ньому віджети:
+
 p2 = ttk.Panedwindow (root, orient=HORIZONTAL, width=650)
 frame1 = ttk.Labelframe(p2, text='Free Images')
 
